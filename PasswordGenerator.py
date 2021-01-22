@@ -9,9 +9,11 @@ for line in f:
 
 f.close()
 
-
+c = 0
 for p in passwords:
+    #alternating letter digit
     if re.match("[A-Z][0-9][A-Z][0-9][A-Z][0-9]",p):
+        c += 1
         print(p)
 
 
